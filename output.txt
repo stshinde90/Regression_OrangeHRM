@@ -1,0 +1,513 @@
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 1/0
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.6s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.7s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m0.9s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network regression_orangehrm_default  [32mCreated[0m[34m0.0s [0m
+ - Container selenium-framework_Batch    Creating[34m1.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 3/2
+ [32m✔[0m Network regression_orangehrm_default      [32mCreated[0m[34m0.0s [0m
+ [32m✔[0m Container selenium-framework_Batch        [32mCreated[0m[34m1.0s [0m
+ [32m✔[0m Container regression_orangehrm-firefox-1  [32mCreated[0m[34m0.1s [0m
+ - Container regression_orangehrm-chrome-1   Creating[34m0.1s [0m
+[?25h[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 4/4[0m
+ [32m✔[0m Network regression_orangehrm_default      [32mCreated[0m[34m0.0s [0m
+ [32m✔[0m Container selenium-framework_Batch        [32mCreated[0m[34m1.0s [0m
+ [32m✔[0m Container regression_orangehrm-firefox-1  [32mCreated[0m[34m0.1s [0m
+ [32m✔[0m Container regression_orangehrm-chrome-1   [32mCreated[0m[34m0.1s [0m
+[?25hAttaching to regression_orangehrm-chrome-1, regression_orangehrm-firefox-1, selenium-framework_Batch
+selenium-framework_Batch        | 2023-06-13 13:03:00,176 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+selenium-framework_Batch        | 2023-06-13 13:03:00,179 INFO RPC interface 'supervisor' initialized
+selenium-framework_Batch        | 2023-06-13 13:03:00,179 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+selenium-framework_Batch        | 2023-06-13 13:03:00,180 INFO supervisord started with pid 8
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:00,829 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:00,829 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:00,832 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:00,832 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:00,832 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:00,832 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:00,833 INFO supervisord started with pid 8
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:00,833 INFO supervisord started with pid 8
+selenium-framework_Batch        | 2023-06-13 13:03:01,182 INFO spawned: 'selenium-grid-hub' with pid 10
+selenium-framework_Batch        | Tracing is disabled
+selenium-framework_Batch        | 2023-06-13 13:03:01,186 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+selenium-framework_Batch        | 13:03:01.484 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+selenium-framework_Batch        | 13:03:01.489 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-framework_Batch        | 13:03:01.569 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.18.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.18.0.2:4443]
+selenium-framework_Batch        | 13:03:01.603 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.18.0.2:4442 and tcp://172.18.0.2:4443
+selenium-framework_Batch        | 13:03:01.617 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:01,835 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:01,835 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:01,836 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:01,836 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:01,838 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:01,838 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:01,839 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:01,840 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:01,852 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:01,854 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-1   | Generating Selenium Config
+regression_orangehrm-firefox-1  | Generating Selenium Config
+regression_orangehrm-chrome-1   | Configuring server...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-firefox-1  | Configuring server...
+regression_orangehrm-firefox-1  | Setting up SE_NODE_HOST...
+regression_orangehrm-firefox-1  | Setting up SE_NODE_PORT...
+regression_orangehrm-firefox-1  | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-firefox-1  | Tracing is disabled
+regression_orangehrm-firefox-1  | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-1   | Tracing is disabled
+regression_orangehrm-chrome-1   | Selenium Grid Node configuration: 
+regression_orangehrm-firefox-1  | [events]
+regression_orangehrm-firefox-1  | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-1   | [events]
+regression_orangehrm-firefox-1  | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-1   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-firefox-1  | 
+regression_orangehrm-chrome-1   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-firefox-1  | [node]
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-chrome-1   | [node]
+regression_orangehrm-chrome-1   | session-timeout = "300"
+regression_orangehrm-chrome-1   | override-max-sessions = false
+regression_orangehrm-chrome-1   | detect-drivers = false
+regression_orangehrm-firefox-1  | session-timeout = "300"
+regression_orangehrm-chrome-1   | drain-after-session-count = 0
+regression_orangehrm-chrome-1   | max-sessions = 1
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-firefox-1  | override-max-sessions = false
+regression_orangehrm-chrome-1   | [[node.driver-configuration]]
+regression_orangehrm-firefox-1  | detect-drivers = false
+regression_orangehrm-chrome-1   | display-name = "chrome"
+regression_orangehrm-firefox-1  | drain-after-session-count = 0
+regression_orangehrm-chrome-1   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-1   | max-sessions = 1
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-chrome-1   | Starting Selenium Grid Node...
+regression_orangehrm-firefox-1  | max-sessions = 1
+regression_orangehrm-firefox-1  | 
+regression_orangehrm-firefox-1  | [[node.driver-configuration]]
+regression_orangehrm-firefox-1  | display-name = "firefox"
+regression_orangehrm-firefox-1  | stereotype = '{"browserName": "firefox", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-firefox-1  | max-sessions = 1
+regression_orangehrm-firefox-1  | 
+regression_orangehrm-firefox-1  | Starting Selenium Grid Node...
+selenium-framework_Batch        | 13:03:02.619 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-1   | 13:03:02.713 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-firefox-1  | 13:03:02.718 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-1   | 13:03:02.723 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-firefox-1  | 13:03:02.725 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:02,857 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:02,857 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:02,857 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:02,859 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:02,859 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:02,859 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-firefox-1  | 13:03:02.914 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-1   | 13:03:02.919 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-firefox-1  | 13:03:02.983 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-chrome-1   | 13:03:02.992 INFO [UnboundZmqEventBus.<init>] - Sockets created
+selenium-framework_Batch        | 13:03:03.376 INFO [Hub.execute] - Started Selenium Hub 4.7.2 (revision 4d4020c3b7): http://172.18.0.2:4444
+regression_orangehrm-firefox-1  | 13:03:03.986 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-1   | 13:03:03.996 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-firefox-1  | 13:03:04.092 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.3:5555
+regression_orangehrm-firefox-1  | 13:03:04.108 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-chrome-1   | 13:03:04.113 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.4:5555
+regression_orangehrm-chrome-1   | 13:03:04.133 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-firefox-1  | 13:03:04.162 INFO [NodeOptions.report] - Adding firefox for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "firefox","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-firefox-1  | 13:03:04.178 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+regression_orangehrm-chrome-1   | 13:03:04.185 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-1   | 13:03:04.228 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+regression_orangehrm-firefox-1  | 13:03:04.429 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.3:5555
+regression_orangehrm-firefox-1  | 13:03:04.430 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.3:5555
+regression_orangehrm-firefox-1  | 13:03:04.441 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+regression_orangehrm-chrome-1   | 13:03:04.457 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.4:5555
+regression_orangehrm-chrome-1   | 13:03:04.458 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.4:5555
+regression_orangehrm-chrome-1   | 13:03:04.472 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-framework_Batch        | 13:03:04.478 INFO [Node.<init>] - Binding additional locator mechanisms: relative, name, id
+selenium-framework_Batch        | 13:03:04.878 INFO [GridModel.setAvailability] - Switching Node c54ec744-ca08-4cff-a472-e46702b33d18 (uri: http://172.18.0.3:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:04.879 INFO [LocalDistributor.add] - Added node c54ec744-ca08-4cff-a472-e46702b33d18 at http://172.18.0.3:5555. Health check every 120s
+selenium-framework_Batch        | 13:03:04.883 INFO [Node.<init>] - Binding additional locator mechanisms: relative, id, name
+regression_orangehrm-firefox-1  | 13:03:04.886 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-framework_Batch        | 13:03:05.026 INFO [GridModel.setAvailability] - Switching Node 65ae0c62-3cd5-442f-a671-7072b4024735 (uri: http://172.18.0.4:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:05.026 INFO [LocalDistributor.add] - Added node 65ae0c62-3cd5-442f-a671-7072b4024735 at http://172.18.0.4:5555. Health check every 120s
+regression_orangehrm-chrome-1   | 13:03:05.030 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+regression_orangehrm-chrome-1   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:11,037 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:11,037 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:11,365 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:12,368 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:13,371 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:14,373 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | Shutdown complete
+regression_orangehrm-chrome-1 exited with code 0
+regression_orangehrm-chrome-1 has been recreated
+regression_orangehrm-chrome-1 exited with code 143
+regression_orangehrm-chrome-1 has been recreated
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:15,276 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:15,279 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:15,280 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:15,281 INFO supervisord started with pid 8
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:15,619 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:15,623 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:15,623 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:15,623 INFO supervisord started with pid 8
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:16,022 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:16,025 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:16,025 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:16,026 INFO supervisord started with pid 8
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:16,283 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:16,285 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:16,286 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:16,288 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:16,299 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:16,360 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:16,363 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:16,363 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:16,364 INFO supervisord started with pid 8
+regression_orangehrm-chrome-1   | Generating Selenium Config
+regression_orangehrm-chrome-1   | Configuring server...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-1   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:16,626 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:16,627 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:16,630 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:16,631 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:16,644 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-1   | Tracing is disabled
+regression_orangehrm-chrome-1   | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-1   | [events]
+regression_orangehrm-chrome-1   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-1   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-chrome-1   | [node]
+regression_orangehrm-chrome-1   | session-timeout = "300"
+regression_orangehrm-chrome-1   | override-max-sessions = false
+regression_orangehrm-chrome-1   | detect-drivers = false
+regression_orangehrm-chrome-1   | drain-after-session-count = 0
+regression_orangehrm-chrome-1   | max-sessions = 1
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-chrome-1   | [[node.driver-configuration]]
+regression_orangehrm-chrome-1   | display-name = "chrome"
+regression_orangehrm-chrome-1   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-1   | max-sessions = 1
+regression_orangehrm-chrome-1   | 
+regression_orangehrm-chrome-1   | Starting Selenium Grid Node...
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:16,720 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:16,723 INFO RPC interface 'supervisor' initialized
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:16,723 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:16,724 INFO supervisord started with pid 8
+regression_orangehrm-chrome-4   | Generating Selenium Config
+regression_orangehrm-chrome-4   | Configuring server...
+regression_orangehrm-chrome-4   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-4   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-4   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-chrome-4   | Tracing is disabled
+regression_orangehrm-chrome-4   | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-4   | [events]
+regression_orangehrm-chrome-4   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-4   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-4   | 
+regression_orangehrm-chrome-4   | [node]
+regression_orangehrm-chrome-4   | session-timeout = "300"
+regression_orangehrm-chrome-4   | override-max-sessions = false
+regression_orangehrm-chrome-4   | detect-drivers = false
+regression_orangehrm-chrome-4   | drain-after-session-count = 0
+regression_orangehrm-chrome-4   | max-sessions = 1
+regression_orangehrm-chrome-4   | 
+regression_orangehrm-chrome-4   | [[node.driver-configuration]]
+regression_orangehrm-chrome-4   | display-name = "chrome"
+regression_orangehrm-chrome-4   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-4   | max-sessions = 1
+regression_orangehrm-chrome-4   | 
+regression_orangehrm-chrome-4   | Starting Selenium Grid Node...
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:17,028 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:17,030 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:17,032 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-chrome-1   | 13:03:17.032 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:17,034 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-1   | 13:03:17.039 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:17,048 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-1   | 13:03:17.168 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-1   | 13:03:17.220 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:17,303 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:17,303 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:17,303 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:17,366 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:17,367 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:17,369 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:17,370 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-2   | Generating Selenium Config
+regression_orangehrm-chrome-2   | Configuring server...
+regression_orangehrm-chrome-2   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-2   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-2   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:17,381 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-2   | Tracing is disabled
+regression_orangehrm-chrome-2   | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-4   | 13:03:17.400 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-2   | [events]
+regression_orangehrm-chrome-2   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-2   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-2   | 
+regression_orangehrm-chrome-2   | [node]
+regression_orangehrm-chrome-2   | session-timeout = "300"
+regression_orangehrm-chrome-2   | override-max-sessions = false
+regression_orangehrm-chrome-2   | detect-drivers = false
+regression_orangehrm-chrome-2   | drain-after-session-count = 0
+regression_orangehrm-chrome-2   | max-sessions = 1
+regression_orangehrm-chrome-2   | 
+regression_orangehrm-chrome-2   | [[node.driver-configuration]]
+regression_orangehrm-chrome-2   | display-name = "chrome"
+regression_orangehrm-chrome-2   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-2   | max-sessions = 1
+regression_orangehrm-chrome-2   | 
+regression_orangehrm-chrome-2   | Starting Selenium Grid Node...
+regression_orangehrm-chrome-4   | 13:03:17.406 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-chrome-4   | 13:03:17.539 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-4   | 13:03:17.589 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:17,647 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:17,647 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:17,648 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-3   | Generating Selenium Config
+regression_orangehrm-chrome-3   | Configuring server...
+regression_orangehrm-chrome-3   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-3   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-3   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:17,726 INFO spawned: 'xvfb' with pid 10
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:17,728 INFO spawned: 'vnc' with pid 11
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:17,730 INFO spawned: 'novnc' with pid 12
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:17,732 INFO spawned: 'selenium-node' with pid 14
+regression_orangehrm-chrome-3   | Tracing is disabled
+regression_orangehrm-chrome-3   | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-3   | [events]
+regression_orangehrm-chrome-3   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-3   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-3   | 
+regression_orangehrm-chrome-3   | [node]
+regression_orangehrm-chrome-3   | session-timeout = "300"
+regression_orangehrm-chrome-3   | override-max-sessions = false
+regression_orangehrm-chrome-3   | detect-drivers = false
+regression_orangehrm-chrome-3   | drain-after-session-count = 0
+regression_orangehrm-chrome-3   | max-sessions = 1
+regression_orangehrm-chrome-3   | 
+regression_orangehrm-chrome-3   | [[node.driver-configuration]]
+regression_orangehrm-chrome-3   | display-name = "chrome"
+regression_orangehrm-chrome-3   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-3   | max-sessions = 1
+regression_orangehrm-chrome-3   | 
+regression_orangehrm-chrome-3   | Starting Selenium Grid Node...
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:17,745 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+regression_orangehrm-chrome-2   | 13:03:17.846 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-2   | 13:03:17.854 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-chrome-2   | 13:03:18.030 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:18,031 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:18,031 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:18,031 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-5   | Generating Selenium Config
+regression_orangehrm-chrome-5   | Configuring server...
+regression_orangehrm-chrome-5   | Setting up SE_NODE_HOST...
+regression_orangehrm-chrome-5   | Setting up SE_NODE_PORT...
+regression_orangehrm-chrome-5   | Setting up SE_NODE_GRID_URL...
+regression_orangehrm-chrome-2   | 13:03:18.096 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-chrome-5   | Tracing is disabled
+regression_orangehrm-chrome-5   | Selenium Grid Node configuration: 
+regression_orangehrm-chrome-5   | [events]
+regression_orangehrm-chrome-5   | publish = "tcp://selenium-framework_Batch:4442"
+regression_orangehrm-chrome-5   | subscribe = "tcp://selenium-framework_Batch:4443"
+regression_orangehrm-chrome-5   | 
+regression_orangehrm-chrome-5   | [node]
+regression_orangehrm-chrome-5   | session-timeout = "300"
+regression_orangehrm-chrome-5   | override-max-sessions = false
+regression_orangehrm-chrome-5   | detect-drivers = false
+regression_orangehrm-chrome-5   | drain-after-session-count = 0
+regression_orangehrm-chrome-5   | max-sessions = 1
+regression_orangehrm-chrome-5   | 
+regression_orangehrm-chrome-5   | [[node.driver-configuration]]
+regression_orangehrm-chrome-5   | display-name = "chrome"
+regression_orangehrm-chrome-5   | stereotype = '{"browserName": "chrome", "browserVersion": "108.0", "platformName": "Linux"}'
+regression_orangehrm-chrome-5   | max-sessions = 1
+regression_orangehrm-chrome-5   | 
+regression_orangehrm-chrome-5   | Starting Selenium Grid Node...
+regression_orangehrm-chrome-1   | 13:03:18.223 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-3   | 13:03:18.271 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-3   | 13:03:18.288 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-chrome-1   | 13:03:18.380 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.4:5555
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:18,386 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:18,386 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:18,386 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-1   | 13:03:18.405 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-chrome-3   | 13:03:18.457 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-1   | 13:03:18.477 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-1   | 13:03:18.504 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+regression_orangehrm-chrome-3   | 13:03:18.545 INFO [UnboundZmqEventBus.<init>] - Sockets created
+regression_orangehrm-chrome-4   | 13:03:18.592 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-5   | 13:03:18.659 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+regression_orangehrm-chrome-5   | 13:03:18.663 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+regression_orangehrm-chrome-1   | 13:03:18.713 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.4:5555
+regression_orangehrm-chrome-1   | 13:03:18.714 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.4:5555
+regression_orangehrm-chrome-4   | 13:03:18.715 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.5:5555
+regression_orangehrm-chrome-1   | 13:03:18.727 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+regression_orangehrm-chrome-4   | 13:03:18.736 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+selenium-framework_Batch        | 13:03:18.737 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:18,750 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:18,750 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:18,751 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+regression_orangehrm-chrome-4   | 13:03:18.780 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-4   | 13:03:18.799 INFO [Node.<init>] - Binding additional locator mechanisms: id, name, relative
+regression_orangehrm-chrome-5   | 13:03:18.815 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-framework_Batch:4442 and tcp://selenium-framework_Batch:4443
+regression_orangehrm-chrome-5   | 13:03:18.865 INFO [UnboundZmqEventBus.<init>] - Sockets created
+selenium-framework_Batch        | 13:03:18.887 INFO [GridModel.setAvailability] - Switching Node 5a6a5209-9e31-4d41-bc96-94c538886cc0 (uri: http://172.18.0.4:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:18.888 INFO [LocalDistributor.add] - Added node 5a6a5209-9e31-4d41-bc96-94c538886cc0 at http://172.18.0.4:5555. Health check every 120s
+regression_orangehrm-chrome-1   | 13:03:18.893 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+regression_orangehrm-chrome-4   | 13:03:18.961 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.5:5555
+regression_orangehrm-chrome-4   | 13:03:18.961 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.5:5555
+regression_orangehrm-chrome-4   | 13:03:18.969 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-framework_Batch        | 13:03:18.974 INFO [Node.<init>] - Binding additional locator mechanisms: name, relative, id
+selenium-framework_Batch        | 13:03:19.072 INFO [GridModel.setAvailability] - Switching Node e5114f22-73b5-4317-950a-1f56c357e0a9 (uri: http://172.18.0.5:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:19.072 INFO [LocalDistributor.add] - Added node e5114f22-73b5-4317-950a-1f56c357e0a9 at http://172.18.0.5:5555. Health check every 120s
+regression_orangehrm-chrome-4   | 13:03:19.075 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+regression_orangehrm-chrome-2   | 13:03:19.100 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-2   | 13:03:19.170 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.6:5555
+regression_orangehrm-chrome-2   | 13:03:19.182 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-chrome-2   | 13:03:19.211 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-2   | 13:03:19.225 INFO [Node.<init>] - Binding additional locator mechanisms: id, name, relative
+regression_orangehrm-chrome-2   | 13:03:19.381 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.6:5555
+regression_orangehrm-chrome-2   | 13:03:19.382 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.6:5555
+regression_orangehrm-chrome-2   | 13:03:19.391 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-framework_Batch        | 13:03:19.396 INFO [Node.<init>] - Binding additional locator mechanisms: id, relative, name
+selenium-framework_Batch        | 13:03:19.505 INFO [GridModel.setAvailability] - Switching Node 3601a4e6-ffda-44db-880c-bb40d9211e0a (uri: http://172.18.0.6:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:19.505 INFO [LocalDistributor.add] - Added node 3601a4e6-ffda-44db-880c-bb40d9211e0a at http://172.18.0.6:5555. Health check every 120s
+regression_orangehrm-chrome-2   | 13:03:19.510 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+regression_orangehrm-chrome-3   | 13:03:19.549 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+regression_orangehrm-chrome-3   | 13:03:19.622 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.7:5555
+regression_orangehrm-chrome-3   | 13:03:19.635 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-chrome-3   | 13:03:19.662 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-3   | 13:03:19.675 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+regression_orangehrm-chrome-3   | 13:03:19.807 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.7:5555
+regression_orangehrm-chrome-3   | 13:03:19.808 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.7:5555
+regression_orangehrm-chrome-3   | 13:03:19.815 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-framework_Batch        | 13:03:19.820 INFO [Node.<init>] - Binding additional locator mechanisms: name, relative, id
+regression_orangehrm-chrome-5   | 13:03:19.868 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+selenium-framework_Batch        | 13:03:19.933 INFO [GridModel.setAvailability] - Switching Node 22b82f4d-8bd7-40ad-a56d-0cc6fa4cdd35 (uri: http://172.18.0.7:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:19.934 INFO [LocalDistributor.add] - Added node 22b82f4d-8bd7-40ad-a56d-0cc6fa4cdd35 at http://172.18.0.7:5555. Health check every 120s
+regression_orangehrm-chrome-3   | 13:03:19.939 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+regression_orangehrm-chrome-5   | 13:03:19.958 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.8:5555
+regression_orangehrm-chrome-5   | 13:03:19.971 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+regression_orangehrm-chrome-5   | 13:03:20.000 INFO [NodeOptions.report] - Adding chrome for {"browserVersion": "108.0","se:noVncPort": 7900,"browserName": "chrome","platformName": "LINUX","se:vncEnabled": true} 1 times
+regression_orangehrm-chrome-5   | 13:03:20.012 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+regression_orangehrm-chrome-5   | 13:03:20.146 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.8:5555
+regression_orangehrm-chrome-5   | 13:03:20.147 INFO [NodeServer.execute] - Started Selenium node 4.7.2 (revision 4d4020c3b7): http://172.18.0.8:5555
+regression_orangehrm-chrome-5   | 13:03:20.153 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-framework_Batch        | 13:03:20.158 INFO [Node.<init>] - Binding additional locator mechanisms: name, id, relative
+selenium-framework_Batch        | 13:03:20.274 INFO [GridModel.setAvailability] - Switching Node 6f8c380a-a748-4506-8d72-adfef1231c66 (uri: http://172.18.0.8:5555) from DOWN to UP
+selenium-framework_Batch        | 13:03:20.274 INFO [LocalDistributor.add] - Added node 6f8c380a-a748-4506-8d72-adfef1231c66 at http://172.18.0.8:5555. Health check every 120s
+regression_orangehrm-chrome-5   | 13:03:20.280 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-framework_Batch        | 13:03:25.257 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-framework_Batch        |  [Capabilities {browserName: chrome}, Capabilities {browserName: chrome, platform: ANY, version: }]
+regression_orangehrm-chrome-4   | Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 31612
+regression_orangehrm-chrome-4   | Only local connections are allowed.
+regression_orangehrm-chrome-4   | Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+regression_orangehrm-chrome-4   | ChromeDriver was started successfully.
+regression_orangehrm-chrome-4   | [1686661405.358][SEVERE]: bind() failed: Cannot assign requested address (99)
+regression_orangehrm-chrome-4   | 13:03:26.122 INFO [LocalNode.newSession] - Session created by the Node. Id: 653233a30cbc7601bf63d69dfec669bd, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.Bf6wxR}, goog:chromeOptions: {debuggerAddress: localhost:44911}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: http://localhost:44911, se:cdpVersion: 108.0.5359.124, se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+selenium-framework_Batch        | 13:03:26.142 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 653233a30cbc7601bf63d69dfec669bd 
+selenium-framework_Batch        |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.Bf6wxR}, goog:chromeOptions: {debuggerAddress: localhost:44911}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 108.0.5359.124, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+regression_orangehrm-chrome-5   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-4   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-firefox-1  | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-1   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-3   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-2   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:37,533 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:37,533 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:37,860 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:37,918 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:37,919 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:37,927 WARN received SIGTERM indicating exit request
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:37,928 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:37,962 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:37,962 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:38,137 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:38,138 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+selenium-framework_Batch        | 13:03:38.161 INFO [GridModel.release] - Releasing slot for session id 653233a30cbc7601bf63d69dfec669bd
+selenium-framework_Batch        | 13:03:38.161 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 653233a30cbc7601bf63d69dfec669bd
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:38,251 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:38,256 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:38,288 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:38,302 WARN received SIGTERM indicating exit request
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:38,303 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:38,484 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:38,630 INFO stopped: selenium-node (terminated by SIGTERM)
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:38,862 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:39,253 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:39,258 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:39,290 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:39,487 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:39,632 INFO stopped: novnc (terminated by SIGTERM)
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:39,864 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:40,255 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:40,260 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:40,292 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:40,489 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:40,634 INFO stopped: vnc (terminated by SIGTERM)
+regression_orangehrm-chrome-2   | 2023-06-13 13:03:40,866 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-2   | Shutdown complete
+regression_orangehrm-chrome-2 exited with code 0
+regression_orangehrm-chrome-2 exited with code 143
+regression_orangehrm-chrome-1   | 2023-06-13 13:03:41,257 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-firefox-1  | 2023-06-13 13:03:41,262 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-1   | Shutdown complete
+regression_orangehrm-firefox-1  | Shutdown complete
+regression_orangehrm-chrome-3   | 2023-06-13 13:03:41,293 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-3   | Shutdown complete
+regression_orangehrm-chrome-4   | 2023-06-13 13:03:41,491 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-4   | Shutdown complete
+regression_orangehrm-chrome-5   | 2023-06-13 13:03:41,636 INFO stopped: xvfb (terminated by SIGTERM)
+regression_orangehrm-chrome-5   | Shutdown complete
+regression_orangehrm-firefox-1 exited with code 0
+regression_orangehrm-firefox-1 exited with code 143
+regression_orangehrm-chrome-3 exited with code 0
+regression_orangehrm-chrome-3 exited with code 143
+regression_orangehrm-chrome-1 exited with code 0
+regression_orangehrm-chrome-1 exited with code 143
+regression_orangehrm-chrome-4 exited with code 0
+regression_orangehrm-chrome-4 exited with code 143
+regression_orangehrm-chrome-5 exited with code 0
+regression_orangehrm-chrome-5 exited with code 143
+selenium-framework_Batch        | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+selenium-framework_Batch        | 2023-06-13 13:03:43,168 WARN received SIGTERM indicating exit request
+selenium-framework_Batch        | 2023-06-13 13:03:43,168 INFO waiting for selenium-grid-hub to die
+selenium-framework_Batch        | 2023-06-13 13:03:44,170 INFO stopped: selenium-grid-hub (terminated by SIGTERM)
+selenium-framework_Batch        | Shutdown complete
+selenium-framework_Batch exited with code 0

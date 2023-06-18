@@ -1,0 +1,31 @@
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
+# Add the `-d` flag at the end for detached execution
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down`
+version: "3"
+services:
+  chrome:
+    image: selenium/node-chrome:4.7.2-20221219
+    shm_size: 2gb
+    depends_on:
+      - selenium-framework_Batch
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-framework_Batch
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+
+  firefox:
+    image: selenium/node-firefox:4.7.2-20221219
+    shm_size: 2gb
+    depends_on:
+      - selenium-framework_Batch
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-framework_Batch
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  selenium-framework_Batch:
+    image: selenium/hub:4.7.2-20221219
+    container_name: selenium-framework_Batch
+    ports:
+      - "4444:4444"
