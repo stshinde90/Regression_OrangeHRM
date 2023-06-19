@@ -1,5 +1,7 @@
 package Build.Regression_OrangeHRM;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.Test;
 
 import pageObjects_OrangeHRM.AdminPage;
@@ -16,9 +18,9 @@ public class TC_02_Leave_Time extends BaseTest {
 	
 	@SuppressWarnings("deprecation")
 	@Test
-	public void sanityOperation()
+	public void sanityOperation() throws MalformedURLException
 	{
-		String loginTitle = lp.login_To_Application("Admin", "admin123");
+		//String loginTitle = lp.login_To_Application("Admin", "admin123");
 		leavepage = new LeavePage(driver);
 		leavepage.click_Leave();
 		leavepage.searchLeaveUser();

@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-     <!--  <class name="Build.Regression_OrangeHRM.TC_01_EndToEnd"/> -->
+     <class name="Build.Regression_OrangeHRM.TC_01_EndToEnd"/>
        <class name="Build.Regression_OrangeHRM.TC_02_Leave_Time"/>
     </classes>
   </test> <!-- Test -->

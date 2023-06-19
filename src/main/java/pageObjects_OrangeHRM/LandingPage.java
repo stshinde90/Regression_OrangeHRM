@@ -31,7 +31,7 @@ public LandingPage(WebDriver driver) {
 	
 	public void goTo()
 	{
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
 
 	public String login_To_Application(String username, String password)
