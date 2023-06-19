@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test_Components.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="cucumber.TestNGTestRunner">
+      <class name="Build.Regression_OrangeHRM.TC_02_Leave_Time">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="StopDockerDelete"/>
+          <include name="launchApplication"/>
+          <include name="teardown"/>
+          <include name="startDockerScale"/>
+          <include name="sanityOperation"/>
         </methods>
-      </class> <!-- cucumber.TestNGTestRunner -->
+      </class> <!-- Build.Regression_OrangeHRM.TC_02_Leave_Time -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

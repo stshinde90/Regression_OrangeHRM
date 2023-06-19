@@ -1,5 +1,7 @@
 package abstract_Components;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +29,12 @@ public class Reusable_Methods {
 		@FindBy(xpath="//nav[@role='navigation']//li[2]//span")
 		WebElement btn_PIM;
 		
+		@FindBy(xpath="//nav[@role='navigation']//li[3]//span")
+		List<WebElement> btn_Leave;
+		
+		@FindBy(xpath="//nav[@role='navigation']//li[4]//span")
+		List<WebElement> btn_Time;
+		
 		public void click_Admin()
 		{
 			waitForElementToVisible(btn_admin);
@@ -36,6 +44,16 @@ public class Reusable_Methods {
 		public void click_PIM()
 		{
 			btn_PIM.click();
+		}
+		
+		public void click_Leave()
+		{
+			btn_Leave.get(0).click();
+		}
+		
+		public void click_Time()
+		{
+			btn_Time.get(0).click();
 		}
 		
 		public void waitForElementToAppear(By findBy) {
