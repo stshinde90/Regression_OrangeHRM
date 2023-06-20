@@ -26,102 +26,88 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects_OrangeHRM.LandingPage;
 
-
 public class BaseTest {
 
 	public static WebDriver driver;
 	public LandingPage lp;
 	public DesiredCapabilities cap;
-	
-	
-	public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();	
-	public static WebDriver getDriver()
-	{
+
+	// ====== Thread Local for parallel Execution ================//
+	public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();
+
+	public static WebDriver getDriver() {
 		return dr.get();
 	}
-	public static void setDriver(WebDriver driverref)
-	{
+
+	public static void setDriver(WebDriver driverref) {
 		dr.set(driverref);
 	}
-    public static void unload()
-	{
+
+	public static void unload() {
 		dr.remove();
 	}
-    
-	String browserName = System.getProperty("browser")!= null ? System.getProperty("browser") : "chrome";
-	
+	// ====== Thread Local for parallel Execution ================//
+
+	String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : "chrome";
+
 	public WebDriver initializeDriver() throws MalformedURLException {
 		// Launch Browser and open URL
-		
-		
-		if(browserName.contains("chrome"))
-		{
-			System.out.println("The regression is executed on" +browserName);
+
+		if (browserName.contains("chrome")) {
+			System.out.println("The regression is executed on" + browserName);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			setDriver(driver);
-			
-		}
-		else if(browserName.contains("remote"))
-		{
+
+		} else if (browserName.contains("remote")) {
 			cap = DesiredCapabilities.chrome();
 			URL url = new URL("http://localhost:4444/wd/hub");
-			driver = new RemoteWebDriver(url,cap);
+			driver = new RemoteWebDriver(url, cap);
 			setDriver(driver);
-		}
-		else
-		{
+		} else {
 			return null;
 		}
-		
+
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		getDriver().manage().window().maximize();
 		return getDriver();
-		
+
 	}
 
-	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException
-	{
-		TakesScreenshot scrShot =((TakesScreenshot)driver);
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File dstFile = new File(System.getProperty("user.dir")+ "//reports//"+testCaseName+"//.png");
+		File dstFile = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + "//.png");
 		FileUtils.copyFile(srcFile, dstFile);
-		return System.getProperty("user.dir")+ "//reports//"+testCaseName+"//.png";
+		return System.getProperty("user.dir") + "//reports//" + testCaseName + "//.png";
 	}
-	
+
 	@BeforeSuite
-	public void startDockerScale() throws IOException, InterruptedException
-	{
-		if(browserName.contains("remote"))
-		{
-			
-		
-		File fi = new File("output.txt");
-		if(fi.delete())
-		{
-			System.out.println("File Deleted Successfully");
-		}
-		
-		StartDocker st = new StartDocker();
-		st.startBatFile();
+	public void startDockerScale() throws IOException, InterruptedException {
+		if (browserName.contains("remote")) {
+
+			File fi = new File("output.txt");
+			if (fi.delete()) {
+				System.out.println("File Deleted Successfully");
+			}
+
+			StartDocker st = new StartDocker();
+			st.startBatFile();
 		}
 	}
-	
+
 	@AfterSuite
-	public void StopDockerDelete() throws IOException, InterruptedException
-	{
-		if(browserName.contains("remote"))
-		{
-			
-		
-		StopDocker sp = new StopDocker();
-		sp.stopBatFile();
+	public void StopDockerDelete() throws IOException, InterruptedException {
+		if (browserName.contains("remote")) {
+
+			StopDocker sp = new StopDocker();
+			sp.stopBatFile();
 		}
 	}
 
 	@BeforeTest(alwaysRun = true)
 	public WebDriver launchApplication() throws MalformedURLException {
-		driver= initializeDriver();
+		driver = initializeDriver();
 		lp = new LandingPage(getDriver());
 		lp.goTo();
 		return getDriver();

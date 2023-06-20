@@ -36,7 +36,7 @@ public class Listeners extends BaseTest implements ITestListener {
 
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
-			destFile = getScreenshot(result.getMethod().getMethodName(), driver);
+			destFile = getScreenshot(result.getMethod().getMethodName(), getDriver());
 			tests.addScreenCaptureFromPath(destFile, result.getMethod().getMethodName());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
