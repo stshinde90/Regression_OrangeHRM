@@ -16,11 +16,11 @@ public class TC_01_EndToEnd extends BaseTest {
 		// LandingPage lp = new LandingPage(driver);
 		String loginTitle = lp.login_To_Application("Admin", "admin123");
 		//Assert.assertEquals(loginTitle, "Login Title Fail");
-		AdminPage ap = new AdminPage(driver);
+		AdminPage ap = new AdminPage(getDriver());
 		ap.click_Admin();
 		ap.searchAdminUser();
 		ap.click_PIM();
-		PIMPage pm = new PIMPage(driver);
+		PIMPage pm = new PIMPage(getDriver());
 		pm.searchPIMUser();
 	}
 

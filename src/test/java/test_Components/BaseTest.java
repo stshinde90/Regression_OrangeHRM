@@ -31,6 +31,21 @@ public class BaseTest {
 
 	public static WebDriver driver;
 	public LandingPage lp;
+	
+	
+	public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();	
+	public static WebDriver getDriver()
+	{
+		return dr.get();
+	}
+	public static void setDriver(WebDriver driverref)
+	{
+		dr.set(driverref);
+	}
+    public static void unload()
+	{
+		dr.remove();
+	}
     
 	String browserName = System.getProperty("browser")!= null ? System.getProperty("browser") : "chrome";
 	
@@ -43,25 +58,24 @@ public class BaseTest {
 			System.out.println("The regression is executed on" +browserName);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			return driver;
+			setDriver(driver);
+			
 		}
 		else if(browserName.contains("remote"))
 		{
 			DesiredCapabilities cap = DesiredCapabilities.chrome();
 			URL url = new URL("http://localhost:4444/wd/hub");
 			driver = new RemoteWebDriver(url,cap);
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			return driver;
+			setDriver(driver);
 		}
 		else
 		{
 			return null;
 		}
 		
-	
+		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getDriver().manage().window().maximize();
+		return getDriver();
 		
 	}
 
@@ -105,16 +119,17 @@ public class BaseTest {
 	}
 
 	@BeforeTest(alwaysRun = true)
-	public LandingPage launchApplication() throws MalformedURLException {
-		driver = initializeDriver();
-		lp = new LandingPage(driver);
+	public WebDriver launchApplication() throws MalformedURLException {
+		driver= initializeDriver();
+		lp = new LandingPage(getDriver());
 		lp.goTo();
-		return lp;
+		return getDriver();
 	}
 
 	@AfterTest(alwaysRun = true)
 	public void teardown() {
-		driver.close();
+		getDriver().close();
+		unload();
 	}
 
 }

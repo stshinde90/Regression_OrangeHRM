@@ -18,7 +18,7 @@ public class Cucumber_EndToEnd extends BaseTest {
 
 	@Given("User is on landing Page")
 	public void User_is_on_landing_Page() throws MalformedURLException {
-		lp = launchApplication();
+		//lp = launchApplication();
 	}
 
 	@Given("^User is logged in with (.+) and (.+)$")
