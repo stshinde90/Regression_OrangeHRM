@@ -31,6 +31,7 @@ public class BaseTest {
 
 	public static WebDriver driver;
 	public LandingPage lp;
+	public DesiredCapabilities cap;
 	
 	
 	public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();	
@@ -63,7 +64,7 @@ public class BaseTest {
 		}
 		else if(browserName.contains("remote"))
 		{
-			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap = DesiredCapabilities.chrome();
 			URL url = new URL("http://localhost:4444/wd/hub");
 			driver = new RemoteWebDriver(url,cap);
 			setDriver(driver);

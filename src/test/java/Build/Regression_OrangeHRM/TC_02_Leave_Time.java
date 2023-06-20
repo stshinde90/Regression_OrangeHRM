@@ -20,7 +20,7 @@ public class TC_02_Leave_Time extends BaseTest {
 	@Test
 	public void sanityOperation() throws MalformedURLException
 	{
-		//String loginTitle = lp.login_To_Application("Admin", "admin123");
+		String loginTitle = lp.login_To_Application("Admin", "admin123");
 		leavepage = new LeavePage(getDriver());
 		leavepage.click_Leave();
 		leavepage.searchLeaveUser();

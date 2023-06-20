@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-20T05:57:48Z" name="Suite" finished-at="2023-06-20T05:58:02Z" duration-ms="13997">
+  <suite started-at="2023-06-20T12:04:32Z" name="Suite" finished-at="2023-06-20T12:04:47Z" duration-ms="14810">
     <groups>
     </groups>
-    <test started-at="2023-06-20T05:57:48Z" name="Test" finished-at="2023-06-20T05:58:02Z" duration-ms="13997">
+    <test started-at="2023-06-20T12:04:32Z" name="Test_EndToEnd" finished-at="2023-06-20T12:04:47Z" duration-ms="14488">
       <class name="Build.Regression_OrangeHRM.TC_01_EndToEnd">
-        <test-method is-config="true" signature="startDockerScale()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@73173f63]" started-at="2023-06-20T05:57:48Z" name="startDockerScale" finished-at="2023-06-20T05:57:48Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDockerScale -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@73173f63]" started-at="2023-06-20T05:57:48Z" name="launchApplication" finished-at="2023-06-20T05:57:53Z" duration-ms="4226" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@35e5d0e5]" started-at="2023-06-20T12:04:32Z" name="launchApplication" finished-at="2023-06-20T12:04:40Z" duration-ms="8003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="sanityOperation()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@73173f63]" started-at="2023-06-20T05:57:53Z" name="sanityOperation" finished-at="2023-06-20T05:57:58Z" duration-ms="5212" status="PASS">
+        <test-method signature="sanityOperation()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@35e5d0e5]" started-at="2023-06-20T12:04:40Z" name="sanityOperation" finished-at="2023-06-20T12:04:47Z" duration-ms="6397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityOperation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@73173f63]" started-at="2023-06-20T05:58:02Z" name="teardown" finished-at="2023-06-20T05:58:02Z" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@35e5d0e5]" started-at="2023-06-20T12:04:47Z" name="teardown" finished-at="2023-06-20T12:04:47Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="StopDockerDelete()[pri:0, instance:Build.Regression_OrangeHRM.TC_01_EndToEnd@73173f63]" started-at="2023-06-20T05:58:03Z" name="StopDockerDelete" finished-at="2023-06-20T05:58:03Z" duration-ms="0" status="PASS">
+      </class> <!-- Build.Regression_OrangeHRM.TC_01_EndToEnd -->
+    </test> <!-- Test_EndToEnd -->
+    <test started-at="2023-06-20T12:04:32Z" name="Test_LeaveTime" finished-at="2023-06-20T12:04:47Z" duration-ms="14810">
+      <class name="Build.Regression_OrangeHRM.TC_02_Leave_Time">
+        <test-method is-config="true" signature="startDockerScale()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@18b0930f]" started-at="2023-06-20T12:04:32Z" name="startDockerScale" finished-at="2023-06-20T12:04:32Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StopDockerDelete -->
-      </class> <!-- Build.Regression_OrangeHRM.TC_01_EndToEnd -->
-      <class name="Build.Regression_OrangeHRM.TC_02_Leave_Time">
-        <test-method signature="sanityOperation()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@55562aa9]" started-at="2023-06-20T05:57:58Z" name="sanityOperation" finished-at="2023-06-20T05:58:02Z" duration-ms="4464" status="PASS">
+        </test-method> <!-- startDockerScale -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@18b0930f]" started-at="2023-06-20T12:04:32Z" name="launchApplication" finished-at="2023-06-20T12:04:40Z" duration-ms="8016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="sanityOperation()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@18b0930f]" started-at="2023-06-20T12:04:40Z" name="sanityOperation" finished-at="2023-06-20T12:04:47Z" duration-ms="6702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityOperation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@18b0930f]" started-at="2023-06-20T12:04:47Z" name="teardown" finished-at="2023-06-20T12:04:47Z" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="StopDockerDelete()[pri:0, instance:Build.Regression_OrangeHRM.TC_02_Leave_Time@18b0930f]" started-at="2023-06-20T12:04:47Z" name="StopDockerDelete" finished-at="2023-06-20T12:04:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StopDockerDelete -->
       </class> <!-- Build.Regression_OrangeHRM.TC_02_Leave_Time -->
-    </test> <!-- Test -->
+    </test> <!-- Test_LeaveTime -->
   </suite> <!-- Suite -->
 </testng-results>

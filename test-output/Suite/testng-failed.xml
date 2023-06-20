@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="test_Components.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
     <classes>
       <class name="Build.Regression_OrangeHRM.TC_02_Leave_Time">
         <methods>
