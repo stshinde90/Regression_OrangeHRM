@@ -82,6 +82,8 @@ public class BaseTest {
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + "//.png";
 	}
 
+	
+	
 	@BeforeSuite
 	public void startDockerScale() throws IOException, InterruptedException {
 		if (browserName.contains("remote")) {
