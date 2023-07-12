@@ -11,7 +11,7 @@ public class TC_01_EndToEnd extends BaseTest {
 	
 	@SuppressWarnings("deprecation")
 	@Test
-	public void sanityOperation()
+	public void tc_01_sanityOperation()
 	{
 		// LandingPage lp = new LandingPage(driver);
 		String loginTitle = lp.login_To_Application("Admin", "admin123");

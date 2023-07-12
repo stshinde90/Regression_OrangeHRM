@@ -9,22 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test_EndToEnd</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,915</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test_LeaveTime</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,916</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">35,831</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test_LeaveTime</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,219</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test_EndToEnd</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,442</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">43,661</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_EndToEnd &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Build.Regression_OrangeHRM.TC_01_EndToEnd</td><td><a href="#m0">sanityOperation</a></td><td rowspan="1">1687266234672</td><td rowspan="1">6035</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test_LeaveTime &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Build.Regression_OrangeHRM.TC_02_Leave_Time</td><td><a href="#m1">sanityOperation</a></td><td rowspan="1">1687266235795</td><td rowspan="1">16797</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_LeaveTime &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Build.Regression_OrangeHRM.TC_02_Leave_Time</td><td><a href="#m0">tc_02_sanityOperation</a></td><td rowspan="1">1689167733114</td><td rowspan="1">14766</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test_EndToEnd &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Build.Regression_OrangeHRM.TC_01_EndToEnd</td><td><a href="#m1">tc_01_sanityOperation</a></td><td rowspan="1">1689167734196</td><td rowspan="1">14971</td></tr></tbody>
 </table>
-<h2>Test_EndToEnd</h2><h3 id="m0">Build.Regression_OrangeHRM.TC_01_EndToEnd#sanityOperation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test_LeaveTime</h2><h3 id="m1">Build.Regression_OrangeHRM.TC_02_Leave_Time#sanityOperation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit123&apos;]&quot;}
+<h2>Test_LeaveTime</h2><h3 id="m0">Build.Regression_OrangeHRM.TC_02_Leave_Time#tc_02_sanityOperation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit123&apos;]&quot;}
   (Session info: chrome=113.0.5672.127)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;M5414133&apos;, ip: &apos;172.27.224.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+System info: host: &apos;M5414133&apos;, ip: &apos;172.24.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jshinds4\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 141f0a1f50b8ea188d9946390a76b2c5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jshinds4\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c606a252e53b7cdaac1783f57bf24f24
 *** Element info: {Using=xpath, value=//button[@type=&apos;submit123&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -40,7 +39,36 @@ Session ID: 141f0a1f50b8ea188d9946390a76b2c5
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
 	at pageObjects_OrangeHRM.TimePage.searchEmployee(TimePage.java:34)
-	at Build.Regression_OrangeHRM.TC_02_Leave_Time.sanityOperation(TC_02_Leave_Time.java:29)
+	at Build.Regression_OrangeHRM.TC_02_Leave_Time.tc_02_sanityOperation(TC_02_Leave_Time.java:29)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test_EndToEnd</h2><h3 id="m1">Build.Regression_OrangeHRM.TC_01_EndToEnd#tc_01_sanityOperation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type=&apos;submit1&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;M5414133&apos;, ip: &apos;172.24.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jshinds4\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1dda29ef8d710ad479549738f1c19b4
+*** Element info: {Using=xpath, value=//button[@type=&apos;submit1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at pageObjects_OrangeHRM.PIMPage.searchPIMUser(PIMPage.java:34)
+	at Build.Regression_OrangeHRM.TC_01_EndToEnd.tc_01_sanityOperation(TC_01_EndToEnd.java:24)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)

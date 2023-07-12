@@ -24,7 +24,7 @@ public TimePage(WebDriver driver) {
 	@FindBy(xpath="//input[@placeholder='Type for hints...']")
 	WebElement txtbx_searchUser;
 	
-	@FindBy(xpath="//button[@type='submit']")
+	@FindBy(xpath="//button[@type='submit123']")
 	WebElement btn_submit;
 	
 	public void searchEmployee()

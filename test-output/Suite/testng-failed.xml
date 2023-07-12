@@ -11,10 +11,23 @@
           <include name="StopDockerDelete"/>
           <include name="launchApplication"/>
           <include name="teardown"/>
+          <include name="tc_02_sanityOperation"/>
           <include name="startDockerScale"/>
-          <include name="sanityOperation"/>
         </methods>
       </class> <!-- Build.Regression_OrangeHRM.TC_02_Leave_Time -->
     </classes>
   </test> <!-- Test_LeaveTime(failed) -->
+  <test thread-count="5" parallel="tests" name="Test_EndToEnd(failed)">
+    <classes>
+      <class name="Build.Regression_OrangeHRM.TC_01_EndToEnd">
+        <methods>
+          <include name="StopDockerDelete"/>
+          <include name="launchApplication"/>
+          <include name="teardown"/>
+          <include name="tc_01_sanityOperation"/>
+          <include name="startDockerScale"/>
+        </methods>
+      </class> <!-- Build.Regression_OrangeHRM.TC_01_EndToEnd -->
+    </classes>
+  </test> <!-- Test_EndToEnd(failed) -->
 </suite> <!-- Failed suite [Suite] -->

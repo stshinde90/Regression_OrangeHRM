@@ -24,7 +24,7 @@ public PIMPage(WebDriver driver) {
 	@FindBy(xpath="//input[@placeholder='Type for hints...']")
 	List<WebElement> txtbx_searchUser;
 	
-	@FindBy(xpath="//button[@type='submit']")
+	@FindBy(xpath="//button[@type='submit1']")
 	WebElement btn_submit;
 	
 	public void searchPIMUser()

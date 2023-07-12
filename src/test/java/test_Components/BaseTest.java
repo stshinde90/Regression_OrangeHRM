@@ -46,6 +46,7 @@ public class BaseTest {
 	public static void unload() {
 		dr.remove();
 	}
+	
 	// ====== Thread Local for parallel Execution ================//
 
 	String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : "chrome";
@@ -64,7 +65,9 @@ public class BaseTest {
 			URL url = new URL("http://localhost:4444/wd/hub");
 			driver = new RemoteWebDriver(url, cap);
 			setDriver(driver);
-		} else {
+		} 
+		else 
+		{
 			return null;
 		}
 
