@@ -1,9 +1,10 @@
 package test_Components;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -31,6 +32,8 @@ public class BaseTest {
 	public static WebDriver driver;
 	public LandingPage lp;
 	public DesiredCapabilities cap;
+	public static Properties prop;
+	public static FileInputStream fis;
 
 	// ====== Thread Local for parallel Execution ================//
 	public static ThreadLocal<WebDriver> dr = new ThreadLocal<>();
@@ -46,28 +49,41 @@ public class BaseTest {
 	public static void unload() {
 		dr.remove();
 	}
-	
+
 	// ====== Thread Local for parallel Execution ================//
 
-	String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : "chrome";
+	public static String getbrowserName() throws IOException {
+		prop = new Properties();
+		fis = new FileInputStream(
+				new File(System.getProperty("user.dir") + "\\src\\test\\java\\dataUtils\\data.properties"));
+		prop.load(fis);
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
+		return browserName;
+	}
 
-	public WebDriver initializeDriver() throws MalformedURLException {
+	public static Properties properties() throws IOException {
+		prop = new Properties();
+		fis = new FileInputStream(
+				new File(System.getProperty("user.dir") + "\\src\\test\\java\\dataUtils\\data.properties"));
+		prop.load(fis);
+		return prop;
+	}
+
+	public WebDriver initializeDriver() throws IOException {
 		// Launch Browser and open URL
 
-		if (browserName.contains("chrome")) {
-			System.out.println("The regression is executed on" + browserName);
+		if (getbrowserName().contains("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			setDriver(driver);
 
-		} else if (browserName.contains("remote")) {
+		} else if (getbrowserName().contains("remote")) {
 			cap = DesiredCapabilities.chrome();
 			URL url = new URL("http://localhost:4444/wd/hub");
 			driver = new RemoteWebDriver(url, cap);
 			setDriver(driver);
-		} 
-		else 
-		{
+		} else {
 			return null;
 		}
 
@@ -85,11 +101,9 @@ public class BaseTest {
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + "//.png";
 	}
 
-	
-	
 	@BeforeSuite
 	public void startDockerScale() throws IOException, InterruptedException {
-		if (browserName.contains("remote")) {
+		if (getbrowserName().contains("remote")) {
 
 			File fi = new File("output.txt");
 			if (fi.delete()) {
@@ -103,7 +117,7 @@ public class BaseTest {
 
 	@AfterSuite
 	public void StopDockerDelete() throws IOException, InterruptedException {
-		if (browserName.contains("remote")) {
+		if (getbrowserName().contains("remote")) {
 
 			StopDocker sp = new StopDocker();
 			sp.stopBatFile();
@@ -111,10 +125,10 @@ public class BaseTest {
 	}
 
 	@BeforeTest(alwaysRun = true)
-	public WebDriver launchApplication() throws MalformedURLException {
+	public WebDriver launchApplication() throws IOException {
 		driver = initializeDriver();
 		lp = new LandingPage(getDriver());
-		lp.goTo();
+		lp.goTo(properties().getProperty("webAdress"));
 		return getDriver();
 	}
 

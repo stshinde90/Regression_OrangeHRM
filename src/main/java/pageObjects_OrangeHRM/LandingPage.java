@@ -11,34 +11,31 @@ import abstract_Components.Reusable_Methods;
 public class LandingPage extends Reusable_Methods {
 
 	public WebDriver driver;
-	
-public LandingPage(WebDriver driver) {
-		
-	    super(driver);
+	public LandingPage(WebDriver driver) {
+
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	@FindBy(name="username")
+	@FindBy(name = "username")
 	WebElement txtbx_username;
-	
-	@FindBy(name="password")
+
+	@FindBy(name = "password")
 	WebElement txtbx_password;
-	
-	@FindBy(xpath="//button[@type='submit']")
+
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btn_submit;
-	
-	public void goTo()
-	{
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+
+	public void goTo(String URL) {
+		//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.get(URL);
 	}
 
-	public String login_To_Application(String username, String password)
-	{
+	public String login_To_Application(String username, String password) {
 		txtbx_username.sendKeys(username);
 		txtbx_password.sendKeys(password);
-		btn_submit.click();	
+		btn_submit.click();
 		String LoginTitile = driver.getTitle();
 		return LoginTitile;
 	}

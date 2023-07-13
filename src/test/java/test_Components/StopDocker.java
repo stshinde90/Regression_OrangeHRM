@@ -10,11 +10,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class StopDocker {
-	
-	
-	public void stopBatFile() throws IOException, InterruptedException
-	{
-		
+
+	public void stopBatFile() throws IOException, InterruptedException {
+
 		boolean flag = false;
 		Runtime rntm = Runtime.getRuntime();
 		rntm.exec("cmd /c start dockerDown.bat");
@@ -23,35 +21,29 @@ public class StopDocker {
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.SECOND, 45);
 		Long stopNow = cal.getTimeInMillis();
-		
-		while(System.currentTimeMillis()<stopNow)
-		{
-			if(flag) {
+
+		while (System.currentTimeMillis() < stopNow) {
+			if (flag) {
 				break;
 			}
 			BufferedReader reader = new BufferedReader(new FileReader(f));
 			String currentLine = reader.readLine();
-		while(currentLine!=null && !flag)
-		{
-			if(currentLine.contains("exited with code 143"))
-			{
-				System.out.println("Found my Text");
-				Thread.sleep(5000);
-				flag=true;
-				break;
-				
+			while (currentLine != null && !flag) {
+				if (currentLine.contains("exited with code 143")) {
+					System.out.println("Found my Text");
+					Thread.sleep(5000);
+					flag = true;
+					break;
+
+				}
+				currentLine = reader.readLine();
 			}
-			currentLine = reader.readLine();
+			reader.close();
 		}
-		reader.close();
-		}
-		
+
 		Assert.assertTrue(flag);
 		Thread.sleep(2000);
-		
-		
-		
-		
+
 	}
 
 }

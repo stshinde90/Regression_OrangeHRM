@@ -9,11 +9,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class StartDocker {
-	
-	
-	public void startBatFile() throws IOException, InterruptedException
-	{
-		
+
+	public void startBatFile() throws IOException, InterruptedException {
+
 		boolean flag = false;
 		Runtime rntm = Runtime.getRuntime();
 		rntm.exec("cmd /c start dockerUp.bat");
@@ -22,28 +20,25 @@ public class StartDocker {
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.SECOND, 45);
 		Long stopNow = cal.getTimeInMillis();
-		
-		while(System.currentTimeMillis()<stopNow)
-		{
-			if(flag) {
+
+		while (System.currentTimeMillis() < stopNow) {
+			if (flag) {
 				break;
 			}
 			BufferedReader reader = new BufferedReader(new FileReader(f));
 			String currentLine = reader.readLine();
-		while(currentLine!=null && !flag)
-		{
-			if(currentLine.contains("Node has been added"))
-			{
-				System.out.println("Found my Text");
-				flag=true;
-				break;
-				
+			while (currentLine != null && !flag) {
+				if (currentLine.contains("Node has been added")) {
+					System.out.println("Found my Text");
+					flag = true;
+					break;
+
+				}
+				currentLine = reader.readLine();
 			}
-			currentLine = reader.readLine();
+			reader.close();
 		}
-		reader.close();
-		}
-		
+
 		Assert.assertTrue(flag);
 		Thread.sleep(5000);
 		rntm.exec("cmd /c start scale.bat");
