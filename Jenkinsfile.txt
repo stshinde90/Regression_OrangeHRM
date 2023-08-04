@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat "mvn test -PRegression"
+                bat "mvn test -Ptestng"
             }
         }
         stage('Deploy') {
